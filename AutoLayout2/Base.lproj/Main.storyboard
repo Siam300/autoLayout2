@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,29 +13,50 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landscape" translatesAutoresizingMaskIntoConstraints="NO" id="gg3-md-qsw">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="1085"/>
+                                <rect key="frame" x="0.0" y="0.0" width="402" height="942"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsr-JM-aOS">
-                                <rect key="frame" x="0.0" y="-68" width="393" height="1085"/>
+                                <rect key="frame" x="0.0" y="611.66666666666663" width="402" height="262.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City by the sea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TU4-2v-xjw">
+                                        <rect key="frame" x="20" y="20" width="362" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is such a beautiful place" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba0-cS-uCK">
+                                        <rect key="frame" x="20" y="59.000000000000007" width="362" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="TU4-2v-xjw" secondAttribute="trailing" constant="20" id="73m-74-2bz"/>
+                                    <constraint firstItem="ba0-cS-uCK" firstAttribute="top" secondItem="TU4-2v-xjw" secondAttribute="bottom" constant="10" id="Bkh-O2-b4D"/>
+                                    <constraint firstAttribute="trailing" secondItem="ba0-cS-uCK" secondAttribute="trailing" constant="20" id="Hga-Sl-4VI"/>
+                                    <constraint firstItem="ba0-cS-uCK" firstAttribute="leading" secondItem="Hsr-JM-aOS" secondAttribute="leading" constant="20" id="Ikw-bg-mZK"/>
+                                    <constraint firstItem="TU4-2v-xjw" firstAttribute="leading" secondItem="Hsr-JM-aOS" secondAttribute="leading" constant="20" id="Jct-cG-Xc7"/>
+                                    <constraint firstItem="TU4-2v-xjw" firstAttribute="top" secondItem="Hsr-JM-aOS" secondAttribute="top" constant="20" id="bbv-y6-DGk"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hsr-JM-aOS" secondAttribute="trailing" id="1hM-9R-XWv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hsr-JM-aOS" secondAttribute="trailing" id="BuK-ZV-7JV"/>
                             <constraint firstItem="gg3-md-qsw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KG1-oi-OkF"/>
-                            <constraint firstItem="Hsr-JM-aOS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KVt-gk-ntg"/>
-                            <constraint firstItem="Hsr-JM-aOS" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="SIS-zP-KIW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gg3-md-qsw" secondAttribute="trailing" id="WmR-8V-gDy"/>
-                            <constraint firstAttribute="bottom" secondItem="gg3-md-qsw" secondAttribute="bottom" id="bfu-Y5-jdZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hsr-JM-aOS" secondAttribute="bottom" id="br4-o8-mu3"/>
-                            <constraint firstItem="Hsr-JM-aOS" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="ssb-Rr-mXa"/>
+                            <constraint firstItem="Hsr-JM-aOS" firstAttribute="bottom" secondItem="gg3-md-qsw" secondAttribute="bottom" constant="-68" id="bfu-Y5-jdZ"/>
+                            <constraint firstItem="Hsr-JM-aOS" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="qwv-ci-yUt"/>
+                            <constraint firstItem="Hsr-JM-aOS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sbD-Vu-wOC"/>
                             <constraint firstItem="gg3-md-qsw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wF2-Am-trV"/>
+                            <constraint firstAttribute="bottom" secondItem="Hsr-JM-aOS" secondAttribute="bottom" id="xBG-pD-XMN"/>
                         </constraints>
                     </view>
                 </viewController>
